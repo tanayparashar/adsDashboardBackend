@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const url="mongodb+srv://tanayparashar:${process.env.DB_PWD}@cluster0.hjise66.mongodb.net/?retryWrites=true&w=majority"
+const url=`mongodb+srv://tanayparashar:${process.env.DB_PWD}@cluster0.hjise66.mongodb.net/?retryWrites=true&w=majority`
 //const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_SERVER}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 mongoose.connect(url, {
   useUnifiedTopology: true,
